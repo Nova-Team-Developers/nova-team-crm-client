@@ -1,0 +1,43 @@
+.root {
+	padding: 31px;
+	background: #fff;
+	border-radius: 0 24px 24px 0;
+
+	&__title {
+		margin-bottom: 15px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&__body {
+		display: flex;
+
+		&__all {
+			margin-right: 44px;
+		}
+
+		&__uploaded {
+			margin-right: 24px;
+		}
+
+		&__title {
+			margin-bottom: 10px;
+			color: #877d92;
+		}
+
+		&__teacher {
+			img {
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
