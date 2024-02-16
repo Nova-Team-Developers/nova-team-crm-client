@@ -1,11 +1,11 @@
 import { classNames } from '@/shared'
+import Icon from './course-icon.svg'
 import cl from './CourseIcon.module.scss'
-import Icon from './Vector.svg'
 
 
-export const CourseIcon = ({className}: {className:string}) => {
+export const CourseIcon = ({className, color}: {className:string, color: string}) => {
   return (
-    <div className={classNames(cl.icon, cl[className]) }>
+    <div style={{ backgroundColor: color}} className={classNames(cl.icon, className) }>
       <img src={Icon} alt='course-icon'/>
     </div>
   )
