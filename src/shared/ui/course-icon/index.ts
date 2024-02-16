@@ -1,0 +1,2 @@
+export { CourseIcon } from "./CourseIcon";
+
