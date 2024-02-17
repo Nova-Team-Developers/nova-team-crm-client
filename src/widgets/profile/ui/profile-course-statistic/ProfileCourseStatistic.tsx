@@ -1,6 +1,10 @@
+import { Typography } from '@/shared'
+
 import cl from './ProfileCourseStatistic.module.scss'
 // eslint-disable-next-line
 import ProfileImage from './course-mentor-example.png'
+
+const { Text, Title } = Typography
 
 export const ProfileCourseStatistic = ({
 	allLessons,
@@ -11,18 +15,39 @@ export const ProfileCourseStatistic = ({
 }) => {
 	return (
 		<div className={cl.root}>
-			<h3 className={cl.root__title}>Course Data</h3>
+			<Title
+				text="course-data"
+				variant="h4"
+				className={cl.root__title}
+			/>
 			<div className={cl.root__body}>
 				<div className={cl.root__body__all}>
-					<p className={cl.root__body__title}>All lessons</p>
-					<p className={cl.root__body__text}>{allLessons}</p>
+					<Text
+						className={cl.root__body__title}
+						text="all-lessons"
+					/>
+					<Text
+						className={cl.root__body__text}
+						text={allLessons}
+						noTranslate
+					/>
 				</div>
 				<div className={cl.root__body__uploaded}>
-					<p className={cl.root__body__title}>Uploaded lessons</p>
-					<p className={cl.root__body__text}>{uploadedLessons}</p>
+					<Text
+						text="uploaded-lessons"
+						className={cl.root__body__title}
+					/>
+					<Text
+						className={cl.root__body__text}
+						text={uploadedLessons}
+						noTranslate
+					/>
 				</div>
 				<div className={cl.root__body__teacher}>
-					<p className={cl.root__body__title}>Teacher</p>
+					<Text
+						text="teacher"
+						className={cl.root__body__title}
+					/>
 					<img
 						src={ProfileImage}
 						alt="teacher"

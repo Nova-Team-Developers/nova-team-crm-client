@@ -6,14 +6,18 @@ import cl from './Text.module.scss'
 
 export const Text = ({
 	className,
-	translate
+	text,
+	noTranslate
 }: {
 	className?: string
-	translate: string
+	text: string
+	noTranslate?: boolean
 }) => {
 	const { t } = useTranslation()
 
 	return (
-		<p className={classNames(cl.root, className ?? '')}>{t(translate)}</p>
+		<p className={classNames(cl.root, className ?? '')}>
+			{noTranslate ? text : t(text)}
+		</p>
 	)
 }
