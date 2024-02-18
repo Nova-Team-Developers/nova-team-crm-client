@@ -1,3 +1,8 @@
 {
-    "translation": {}
+    "translation": {
+        "course-data": "Course Data",
+        "all-lessons": "All lessons",
+        "uploaded-lessons": "Uploaded lessons",
+        "teacher": "Teacher"
+    }
 }

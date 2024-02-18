@@ -7,11 +7,13 @@ import cl from './Title.module.scss'
 export const Title = ({
 	variant,
 	className,
-	translate
+	text,
+	noTranslate
 }: {
 	variant: 'h1' | 'h3' | 'h4'
 	className?: string
-	translate: string
+	text: string
+	noTranslate?: boolean
 }) => {
 	const { t } = useTranslation()
 
@@ -24,7 +26,7 @@ export const Title = ({
 						cl.root__h1,
 						className ?? ''
 					)}>
-					{t(translate)}
+					{noTranslate ? text : t(text)}
 				</h1>
 			)
 		case 'h3':
@@ -35,7 +37,7 @@ export const Title = ({
 						cl.root__h3,
 						className ?? ''
 					)}>
-					{t(translate)}
+					{noTranslate ? text : t(text)}
 				</h2>
 			)
 		case 'h4':
@@ -46,7 +48,7 @@ export const Title = ({
 						cl.root__h4,
 						className ?? ''
 					)}>
-					{t(translate)}
+					{noTranslate ? text : t(text)}
 				</h3>
 			)
 	}
