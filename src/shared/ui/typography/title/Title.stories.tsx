@@ -10,6 +10,7 @@ import { Typography } from '../Typography'
 const { Title } = Typography
 
 const meta: Meta<typeof Title> = {
+	// setup i18n
 	decorators: [
 		Story => {
 			useEffect(() => {
