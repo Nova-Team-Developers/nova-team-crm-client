@@ -1,3 +1,11 @@
+import { Button } from '@/shared/ui/button'
+
 export const HomePage = () => {
-	return <>TEST</>
+	return (
+		<>
+			<Button
+				className={'cla'}
+				name={'Add'}></Button>
+		</>
+	)
 }

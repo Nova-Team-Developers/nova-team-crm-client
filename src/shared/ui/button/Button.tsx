@@ -1,31 +1,28 @@
 import type { ReactNode } from 'react'
 
 import { classNames } from '@/shared'
-import { Icon } from '@/shared/ui/icon'
-// eslint-disable-next-line import/no-internal-modules
-import { IconName } from '@/shared/ui/icon/utils.ts'
+import { Icon, type IconName } from '@/shared'
 
 import cl from './Button.module.scss'
 
 export const Button = ({
-	onClick,
-	children,
 	className,
-	icon
+	name,
+	children
 }: {
-	onClick: () => void
-	children: ReactNode
-	className: string
-	icon: IconName
+	children?: ReactNode
+	className?: string
+	name?: IconName
 }) => {
 	return (
-		<>
-			<button
-				onClick={onClick}
-				className={classNames(cl.button, className)}>
-				{children}
-				<Icon name={icon} />
-			</button>
-		</>
+		<button className={classNames(cl.button, className ?? ' ')}>
+			{children}
+			{name && (
+				<Icon
+					className={className}
+					name={name}
+				/>
+			)}
+		</button>
 	)
 }
