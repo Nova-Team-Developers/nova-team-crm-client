@@ -1,3 +1,12 @@
+import { ProfileInfoInput } from '@/widgets/profile'
+
 export const HomePage = () => {
-	return <>TEST</>
+	return (
+		<ProfileInfoInput
+			className={'class'}
+			name={'name'}
+			label={'name'}
+			placeholder={'Student'}
+		/>
+	)
 }
