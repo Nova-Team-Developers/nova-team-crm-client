@@ -1,9 +1,29 @@
 .button{
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
-  column-gap: 10px;
   border: none;
   border-radius: 16px;
+}
+
+.single{
+  justify-content: center;
+}
+
+.multi{
+  justify-content: space-between;
+  column-gap: 51px;
+}
+
+.primary{
+  background-color: #fff;
+}
+
+.secondary{
+  background-color: #F9F4FD;
+}
+
+.save{
+  background-color: #1AD3D3;
 }

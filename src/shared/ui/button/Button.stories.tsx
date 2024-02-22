@@ -14,9 +14,17 @@ const meta = {
 			type: 'string',
 			description: 'ClassName for customization component'
 		},
-		name: {
+		iconName: {
 			type: 'string',
 			description: 'icon name'
+		},
+		text: {
+			type: 'string',
+			description: 'text into component'
+		},
+		noTranslate: {
+			type: 'boolean',
+			description: 'Is text will be translate'
 		}
 	}
 } satisfies Meta<typeof Button>
@@ -26,14 +34,14 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
 	args: {
-		children: 'Random'
+		iconName: 'Edit'
 	}
 }
-export const Icon: Story = {
+export const ButtonText: Story = {
 	args: {
-		name: 'Edit'
+		text: 'Add tasks'
 	}
 }
 export const Combo: Story = {
-	render: () => <Button name={'Edit'}>RandomText</Button>
+	args: { iconName: 'Add', text: 'Add tasks' }
 }
