@@ -1,12 +1,16 @@
 {
-    "translation": {
-        "course-data": "Course Data",
-        "all-lessons": "All lessons",
-        "uploaded-lessons": "Uploaded lessons",
-        "teacher": "Teacher",
-        "class": "Class",
-        "homework": "Homework",
-        "online-meeting": "Online meeting",
-        "search-course": "Search course"
-    }
+	"translation": {
+		"course-data": "Course Data",
+		"all-lessons": "All lessons",
+		"uploaded-lessons": "Uploaded lessons",
+		"teacher": "Teacher",
+		"class": "Class",
+		"homework": "Homework",
+		"online-meeting": "Online meeting",
+		"search-course": "Search course",
+		"safety": "Safety",
+		"notification": "Notification",
+        "connected apps": "Connected Apps",
+        "payments": "Payments"
+	}
 }
