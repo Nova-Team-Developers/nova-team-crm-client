@@ -8,7 +8,7 @@ type TProfileSettingsSidebar = {
 
 export const sidebarItems: TProfileSettingsSidebar[] = [
 	{ title: 'safety', icon: 'Safety', route: '#' },
-	{ title: 'Notification', icon: 'Notification', route: '#' },
-	{ title: 'Connected Apps', icon: 'Connected', route: '#' },
-	{ title: 'Payments', icon: 'Payments', route: '#' }
+	{ title: 'notification', icon: 'Notification', route: '#' },
+	{ title: 'connected Apps', icon: 'Connected', route: '#' },
+	{ title: 'payments', icon: 'Payments', route: '#' }
 ]
