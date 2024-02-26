@@ -1,1 +1,1 @@
-export { ProfileCourseStatistic } from './ui';
+export { ProfileCourseStatistic, ProfileCourseList } from './ui'
