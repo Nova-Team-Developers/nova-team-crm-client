@@ -9,7 +9,7 @@ export const Date = ({
 }) => {
 	return (
 		<div className={cl.root}>
-			<Icon name={'Calendar'} />
+			<Icon name={'CalendarGray'} />
 			<div className={cl.date}>
 				<Text text={date} />
 			</div>

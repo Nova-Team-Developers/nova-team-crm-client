@@ -54,11 +54,46 @@ export const Search: Story = {
 }
 export const Done: Story = {
 	args: {
-		name: "Done"
+		name: 'Done'
 	}
 }
 export const Course: Story = {
 	args: {
 		name: 'Course'
+	}
+}
+export const Teachers: Story = {
+	args: {
+		name: 'Teachers'
+	}
+}
+export const Dashboard: Story = {
+	args: {
+		name: 'Dashboard'
+	}
+}
+export const Calendar: Story = {
+	args: {
+		name: 'Calendar'
+	}
+}
+export const Messenger: Story = {
+	args: {
+		name: 'Messenger'
+	}
+}
+export const Logout: Story = {
+	args: {
+		name: 'Logout'
+	}
+}
+export const InfoPortal: Story = {
+	args: {
+		name: 'InfoPortal'
+  }
+}
+export const Chevron: Story = {
+	args: {
+		name: 'Chevron'
 	}
 }

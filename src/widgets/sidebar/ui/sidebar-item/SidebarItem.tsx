@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { type IconName, Icon, Typography } from '@/shared'
+import { Icon, type IconName, Typography } from '@/shared'
 import cl from './SidebarItem.module.scss'
 
 const { Title } = Typography
@@ -7,23 +7,45 @@ const { Title } = Typography
 export const SidebarItem = ({
 	title,
 	icon,
-	route
+	route,
+	onClick
 }: {
 	title: string
 	icon: IconName
-	route: string
+	route?: string
+	onClick?: () => void
 }) => {
 	return (
-		<Link to={route} className={cl.root}>
-			<Icon
-				name={icon}
-				className={cl.root__sidebar_item_icon}
-			/>
-			<Title
-				text={title}
-				variant="h4"
-				className={cl.root__sidebar_item_title}
-			/>
-		</Link>
+		<>
+			{route ? (
+				<Link
+					to={route}
+					className={cl.root}>
+					<Icon
+						name={icon}
+						className={cl.root__sidebar_item_icon}
+					/>
+					<Title
+						text={title}
+						variant="h4"
+						className={cl.root__sidebar_item_title}
+					/>
+				</Link>
+			) : (
+				<button
+					className={`${cl.root__button} ${cl.root}`}
+					onClick={onClick}>
+					<Icon
+						name={icon}
+						className={cl.root__sidebar_item_icon}
+					/>
+					<Title
+						text={title}
+						variant="h4"
+						className={cl.root__sidebar_item_title}
+					/>
+				</button>
+			)}
+		</>
 	)
 }

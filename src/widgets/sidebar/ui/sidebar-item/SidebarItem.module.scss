@@ -3,6 +3,14 @@
     align-items: center;
     column-gap: 15px;
 
+    &__button {
+        padding: 0;
+        color: inherit;
+        font: inherit;
+        background-color: transparent;
+        border: none;
+    }
+
     &__sidebar_item_title {
         color: #D9D9D9;
         font-size: 16px;
@@ -10,7 +18,7 @@
     }
     
     &__sidebar_item_icon {
-        width: 24px;
+        width: 24px; 
         height: 24px;
     }
 }
