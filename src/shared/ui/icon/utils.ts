@@ -3,6 +3,8 @@
 /* eslint-disable import/no-internal-modules */
 import Add from '@/shared/assets/icons/add.svg?react'
 import Arrow from '@/shared/assets/icons/arrow.svg?react'
+import Calendar from '@/shared/assets/icons/calendar.svg?react'
+import Computer from '@/shared/assets/icons/computer.svg?react'
 import Course from '@/shared/assets/icons/course-icon.svg?react'
 import Done from '@/shared/assets/icons/done.svg?react'
 import Edit from '@/shared/assets/icons/edit.svg?react'
@@ -18,7 +20,9 @@ const icons = {
 	Arrow,
 	Search,
 	Done,
-	Course
+	Course,
+	Computer,
+	Calendar
 }
 
 export type IconName = keyof typeof icons
