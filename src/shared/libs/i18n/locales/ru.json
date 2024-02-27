@@ -1,12 +1,20 @@
 {
     "translation": {
-        "course-data": "Информация о курсе",
-        "all-lessons": "Все уроки",
-        "uploaded-lessons": "Загруженные уроки",
-        "teacher": "Учитель",
-        "class": "Класс",
-        "homework": "Домашнее задание",
-        "online-meeting": "Онлайн встреча",
-        "search-course": "Найти курс"
-    }
+		"course-data": "Информация о курсе",
+		"all-lessons": "Все уроки",
+		"uploaded-lessons": "Загруженные уроки",
+		"teacher": "Учитель",
+		"class": "Класс",
+		"homework": "Домашнее задание",
+		"online-meeting": "Онлайн встреча",
+		"search-course": "Найти курс",
+		"issue_activity": "Активные Задачи",
+		"send_email_issue": "Присылать уведомление на почту о новых задачах ",
+		"meeting_tracking": "Отслеживать Встречи",
+		"send_meeting_notifications": "Присылать уведомление, когда кто-то назначил встречу",
+		"new_messages": "Новые сообщения",
+		"send_message_notifications": "Присылать уведомление, когда кто-то отправил сообщение",
+		"don't_send": "Не присылать уведомления после 21:00",
+		"notifications": "Уведомления"
+	}
 }
