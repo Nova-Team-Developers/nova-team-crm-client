@@ -1,9 +1,12 @@
 .root {
 	display: inline-flex;
-	padding: 4px 5px;
-	border: 1px solid orange;
+	padding: 4px;
 	border-radius: 14px;
 	cursor: pointer;
+
+	&_large {
+		background-color: #f9f4fd;
+	}
 
 	&__body {
 		display: flex;
@@ -11,6 +14,10 @@
 		justify-content: center;
 		width: 150px;
 		border-radius: 14px;
+
+		&_large {
+			width: 237px;
+		}
 
 		&_text {
 			padding: 9px;
