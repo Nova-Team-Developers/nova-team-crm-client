@@ -9,18 +9,19 @@
 
 	&__title {
 		color: #1b0a29;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 16px;
 		line-height: 24px;
 	}
 
 	&__description {
 		color: #877d92;
+		font-weight: 600;
 		font-size: 14px;
 		line-height: 22px;
 	}
 
-	&__toggle{
+	&__toggle {
 		min-width: 51px;
 	}
 }
