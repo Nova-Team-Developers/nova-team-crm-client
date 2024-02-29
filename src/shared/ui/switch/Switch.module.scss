@@ -1,0 +1,29 @@
+.root {
+	display: inline-flex;
+	padding: 4px 5px;
+	border: 1px solid orange;
+	border-radius: 14px;
+	cursor: pointer;
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 150px;
+		border-radius: 14px;
+
+		&_text {
+			padding: 9px;
+			color: #1b0a29;
+			font-size: 16px;
+		}
+	}
+
+	&__active {
+		background-color: #1fc6c6;
+
+		&_text {
+			color: #fff;
+		}
+	}
+}
