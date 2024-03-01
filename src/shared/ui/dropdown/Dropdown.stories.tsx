@@ -22,9 +22,9 @@ const meta: Meta<typeof Dropdown> = {
 
 export default meta
 
-type Story = StoryObj<typeof Dropdown> 
+type Story = StoryObj<typeof Dropdown>
 
-export const Default: Story = { 
+export const Default: Story = {
 	args: {
 		options: [
 			{ title: 'First option', value: 'first_option' },
@@ -35,8 +35,6 @@ export const Default: Story = {
 		setActiveValue: () => {}
 	}
 }
-
-
 
 export const SecondOption: Story = {
 	args: {
@@ -50,7 +48,7 @@ export const SecondOption: Story = {
 	}
 }
 
-export const ThirdOption: Story = { 
+export const ThirdOption: Story = {
 	args: {
 		options: [
 			{ title: 'First option', value: 'first_option' },

@@ -28,7 +28,7 @@ export const ProfileSettingsBodyItems = () => {
 			/>
 			<div className={cl.root__notifications}>
 				<Checkbox checked />
-				<Text text="don't_send" />
+				<Text text="dont_send" />
 			</div>
 		</div>
 	)
