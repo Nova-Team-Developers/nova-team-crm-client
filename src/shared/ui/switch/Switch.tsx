@@ -58,7 +58,6 @@ export const Switch = ({
 					</div>
 				</div>
 			)
-			break
 		case 'largeSize':
 			return (
 				<div className={classNames(cl.root, cl.root_large)}>
@@ -94,7 +93,6 @@ export const Switch = ({
 					</div>
 				</div>
 			)
-			break
 		default:
 			return ''
 	}
