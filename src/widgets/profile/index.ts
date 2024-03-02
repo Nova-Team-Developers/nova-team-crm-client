@@ -1,2 +1,1 @@
-export { ProfileCourseStatistic } from './ui'
-export { ProfileInfoInput } from './ui'
+export { ProfileCourseStatistic, ProfileCourseList, ProfileInfoInput } from './ui'

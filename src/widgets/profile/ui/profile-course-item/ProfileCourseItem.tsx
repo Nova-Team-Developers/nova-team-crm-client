@@ -19,7 +19,6 @@ export const ProfileCourseItem = ({
 		<Link
 			to={'#'}
 			className={cl.root}>
-			<div className={cl.root__leftContainer}>
 				<div
 					className={`${cl.root__icon_wrapper} ${lessonType === 'Lecture' ? cl.orange : cl.green}`}>
 					<Icon
@@ -28,11 +27,13 @@ export const ProfileCourseItem = ({
 					/>
 				</div>
 				<div className={cl.root__course_info}>
-					<Title
-						text={courseName}
-						variant="h3"
-						className={cl.root__course_item_title}
-					/>
+					<div title={courseName}>
+						<Title
+							text={courseName}
+							variant="h3"
+							className={cl.root__course_item_title}
+						/>
+					</div>
 					<div className={cl.root__lower_container}>
 						<Text
 							text={lessonType}
@@ -45,7 +46,6 @@ export const ProfileCourseItem = ({
 						/>
 					</div>
 				</div>
-			</div>
 			<div className={cl.root__course_item_button}>
 				<Icon name={'Arrow'} />
 			</div>

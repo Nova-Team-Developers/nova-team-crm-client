@@ -7,6 +7,8 @@
         "class": "Класс",
         "homework": "Домашнее задание",
         "online-meeting": "Онлайн встреча",
-        "search-course": "Найти курс"
+        "search-course": "Найти курс",
+        "teaches-courses": "Преподаваемые курсы",
+        "lessons-in-total": "Всего уроков"
     }
 }
