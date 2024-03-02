@@ -1,6 +1,5 @@
 import React from 'react'
-import { Typography } from '@/shared'
-import { PercentCircle } from '@/shared/ui/percent-circle'
+import { Typography, PercentCircle } from '@/shared'
 import TeacherImage from './teacher-image.png'
 import cl from './TeacherActivityItem.module.scss'
 
