@@ -1,18 +1,50 @@
-.input {
-  width: 217px;
-  height: 48px;
-  border: 1px solid #E8D8F0;
-  border-radius: 12px;
-}
-
-.input::placeholder {
-  padding-left: 18px;
-  font-size: 14px;
-}
-
 .label {
-  margin-bottom: 7px;
-  color: #7D8592;
-  font-weight: 700;
-  font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	width: 217px;
+	height: 98px;
+	margin: 0;
+
+	&_name {
+		margin-bottom: 7px;
+		margin-left: 6px;
+		color: #887d92;
+		font-weight: 700;
+		font-size: 14px;
+		font-family: 'Nunito Sans', sans-serif;
+		line-height: 24px;
+		letter-spacing: 0;
+		text-align: left;
+	}
+}
+
+.input {
+	box-sizing: border-box;
+	padding: 12px 18px;
+	color: #887d92;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Nunito Sans', sans-serif;
+	line-height: 24px;
+	letter-spacing: 0;
+	text-align: left;
+	background: #fff;
+	border: 1px solid #e8d8f0;
+	border-radius: 14px;
+	box-shadow: 0 1px 2px 0 #b8c8e0 22%;
+
+	&-error {
+		margin: 6px;
+		color: red;
+	}
+
+	&-descr {
+		margin: 6px;
+	}
+}
+
+.icon {
+	position: absolute;
+	top: 55px;
+	right: 40px;
 }
