@@ -1,20 +1,14 @@
 {
-	"translation": {
-		"course-data": "Course Data",
-		"all-lessons": "All lessons",
-		"uploaded-lessons": "Uploaded lessons",
-		"teacher": "Teacher",
-		"class": "Class",
-		"homework": "Homework",
-		"online-meeting": "Online meeting",
-		"search-course": "Search course",
-		"issue_activity": "Issue Activity",
-		"send_email_issue": "Send me email notifications for issue activity",
-		"meeting_tracking": "Meeting Tracking",
-		"send_meeting_notifications": "Send me notifications when someone’ve set up a meeting",
-		"new_messages": "New Messages",
-		"send_message_notifications": "Send me notifications when someone’ve sent a message",
-		"dont_send": "Don't send me notifications after 9:00 PM",
-		"notifications": "Notifications"
-	}
+    "translation": {
+        "course-data": "Course Data",
+        "all-lessons": "All lessons",
+        "uploaded-lessons": "Uploaded lessons",
+        "teacher": "Teacher",
+        "class": "Class",
+        "homework": "Homework",
+        "online-meeting": "Online meeting",
+        "search-course": "Search course",
+        "teaches-courses": "Teaches courses",
+        "lessons-in-total": "Lessons in total"
+    }
 }
