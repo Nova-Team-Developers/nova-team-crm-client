@@ -13,14 +13,14 @@ export const HomePage = () => {
 				variant="largeSize"
 			/>
 
-			<h1 style={{ textAlign: 'center', marginBottom: '30px' }}>
+			{/* <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>
 				smallSize
 			</h1>
 			<Switch
 				textOnLeft="Courses"
 				textOnRight="My schedule"
 				variant="smallSize"
-			/>
+			/> */}
 		</>
 	)
 }

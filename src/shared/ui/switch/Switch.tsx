@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Typography, classNames } from '@/shared'
+import { Typography} from '@/shared'
 
 import cl from './Switch.module.scss'
 
@@ -9,91 +9,48 @@ const { Text } = Typography
 export const Switch = ({
 	textOnLeft,
 	textOnRight,
-	variant,
-	checked
+	variant
 }: {
 	textOnLeft: string
 	textOnRight: string
 	variant: string
-	checked?: boolean
 }) => {
-	const [isActive, setIsActive] = useState<boolean>(checked ?? false)
+	const [activeValue, setActiveValue] = useState(true)
 
-	const isSwitching = () => setIsActive(!isActive)
+	const changeValue = () => setActiveValue(!activeValue)
 
 	variant === 'smallSize'
 	variant === 'largeSize'
 
-	switch (variant) {
-		case 'smallSize':
-			return (
-				<div className={cl.root}>
-					<div
-						className={classNames(
-							cl.root__body,
-							isActive ? cl.root__active : ''
-						)}
-						onClick={isSwitching}>
-						<Text
-							text={textOnLeft}
-							className={classNames(
-								cl.root__body_text,
-								isActive ? cl.root__active_text : ''
-							)}
-						/>
-					</div>
-					<div
-						className={classNames(
-							cl.root__body,
-							!isActive ? cl.root__active : ''
-						)}
-						onClick={isSwitching}>
-						<Text
-							text={textOnRight}
-							className={classNames(
-								cl.root__body_text,
-								!isActive ? cl.root__active_text : ''
-							)}
-						/>
-					</div>
-				</div>
-			)
-		case 'largeSize':
-			return (
-				<div className={classNames(cl.root, cl.root_large)}>
-					<div
-						className={classNames(
-							cl.root__body,
-							cl.root__body_large,
-							isActive ? cl.root__active : ''
-						)}
-						onClick={isSwitching}>
-						<Text
-							text={textOnLeft}
-							className={classNames(
-								cl.root__body_text,
-								isActive ? cl.root__active_text : ''
-							)}
-						/>
-					</div>
-					<div
-						className={classNames(
-							cl.root__body,
-							cl.root__body_large,
-							!isActive ? cl.root__active : ''
-						)}
-						onClick={isSwitching}>
-						<Text
-							text={textOnRight}
-							className={classNames(
-								cl.root__body_text,
-								!isActive ? cl.root__active_text : ''
-							)}
-						/>
-					</div>
-				</div>
-			)
-		default:
-			return ''
-	}
+	return (
+		<div className={cl.root}>
+			<div className={cl.root__container}>
+				<div
+					className={cl.root__container_btn}
+					style={activeValue ? { left: '0' } : { left: '150px' }}
+				/>
+			</div>
+
+			<div
+				onClick={changeValue}
+				className={cl.root__text}>
+				<Text
+					text={textOnLeft}
+					className={
+						activeValue ? cl.root__text_left : cl.root__text_right
+					}
+				/>
+			</div>
+			<div
+				onClick={changeValue}
+				className={cl.root__text}>
+				<Text
+					text={textOnRight}
+					className={
+						activeValue ? cl.root__text_right : cl.root__text_left
+					}
+				/>
+			</div>
+		</div>
+	)
 }

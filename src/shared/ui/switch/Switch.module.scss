@@ -1,36 +1,50 @@
 .root {
-	display: inline-flex;
-	padding: 5px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 310px;
+	height: 48px;
+	background-color: antiquewhite;
 	border-radius: 14px;
 	cursor: pointer;
 
-	&_large {
-		background-color: #f9f4fd;
-	}
-
-	&__body {
-		display: flex;
-		justify-content: center;
+	&__container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
 		width: 150px;
-		padding: 2px;
-		border-radius: 14px;
+		height: 48px;
+		padding: 5px 4px;
 
-		&_large {
-			width: 239px;
-		}
-
-		&_text {
-			margin:  9px;
-			color: #1b0a29;
-			font-size: 16px;
+		&_btn {
+			position: relative;
+			z-index: 0;
+			width: 150px;
+			height: 100%;
+			background-color: #1fc6c6;
+			border-radius: 14px;
+			transition: 1s;
 		}
 	}
 
-	&__active {
-		background-color: #1fc6c6;
+	&__text {
+		z-index: 10;
+		width: 100%;
+		margin: 9px;
+		font-size: 16px;
 
-		&_text {
+		&_left {
+			z-index: 11;
 			color: #fff;
+			transition: 1s;
+		}
+
+		&_right {
+			z-index: 11;
+			color: #1b0a29;
+			transition: 1s;
 		}
 	}
 }
