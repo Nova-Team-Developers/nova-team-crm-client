@@ -10,10 +10,6 @@ const meta: Meta<typeof Switch> = {
 	},
 	tags: ['autodocs'],
 	argTypes: {
-		checked: {
-			type: 'boolean',
-			description: 'Check switch by default'
-		},
 		variant: {
 			type: 'string',
 			description: 'Styles variables for component'
@@ -41,8 +37,8 @@ export const SmallSize: Story = {
 }
 export const LargeSize: Story = {
 	args: {
-		textOnLeft: 'Courses',
-		textOnRight: 'My schedule',
+		textOnLeft: 'Days',
+		textOnRight: 'Hours',
 		variant: 'largeSize'
 	}
 }

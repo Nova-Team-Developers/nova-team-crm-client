@@ -1,14 +1,20 @@
 {
-    "translation": {
-        "course-data": "Информация о курсе",
-        "all-lessons": "Все уроки",
-        "uploaded-lessons": "Загруженные уроки",
-        "teacher": "Учитель",
-        "class": "Класс",
-        "homework": "Домашнее задание",
-        "online-meeting": "Онлайн встреча",
-        "search-course": "Найти курс",
-        "teaches-courses": "Преподаваемые курсы",
-        "lessons-in-total": "Всего уроков"
-    }
+	"translation": {
+		"course-data": "Информация о курсе",
+		"all-lessons": "Все уроки",
+		"uploaded-lessons": "Загруженные уроки",
+		"teacher": "Учитель",
+		"class": "Класс",
+		"homework": "Домашнее задание",
+		"online-meeting": "Онлайн встреча",
+		"search-course": "Найти курс",
+		"teaches-courses": "Преподаваемые курсы",
+		"lessons-in-total": "Всего уроков",
+		"courses": "Курсы",
+		"my-schedule": "Расписание",
+		"list": "Список",
+		"activity": "Активность",
+		"days": "Дни",
+		"hours": "Часы"
+	}
 }

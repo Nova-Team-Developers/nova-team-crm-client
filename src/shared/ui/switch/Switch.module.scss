@@ -5,23 +5,27 @@
 	justify-content: space-around;
 	width: 310px;
 	height: 48px;
-	background-color: antiquewhite;
 	border-radius: 14px;
-	cursor: pointer;
+
+	&_large {
+		width: 448px;
+		background-color: #f9f4fd;
+	}
 
 	&__container {
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: 1;
 		width: 150px;
-		height: 48px;
-		padding: 5px 4px;
+		height: 40px;
+		margin: 4px 5px;
+
+		&_large {
+			width: 224px;
+		}
 
 		&_btn {
 			position: relative;
-			z-index: 0;
-			width: 150px;
 			height: 100%;
 			background-color: #1fc6c6;
 			border-radius: 14px;
@@ -31,18 +35,16 @@
 
 	&__text {
 		z-index: 10;
-		width: 100%;
-		margin: 9px;
+		padding: 0 40px;
 		font-size: 16px;
+		cursor: pointer;
 
 		&_left {
-			z-index: 11;
 			color: #fff;
 			transition: 1s;
 		}
 
 		&_right {
-			z-index: 11;
 			color: #1b0a29;
 			transition: 1s;
 		}

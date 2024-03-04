@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Typography} from '@/shared'
+import { Typography, classNames } from '@/shared'
 
 import cl from './Switch.module.scss'
 
@@ -15,7 +15,7 @@ export const Switch = ({
 	textOnRight: string
 	variant: string
 }) => {
-	const [activeValue, setActiveValue] = useState(true)
+	const [activeValue, setActiveValue] = useState<boolean>(true)
 
 	const changeValue = () => setActiveValue(!activeValue)
 
@@ -23,11 +23,27 @@ export const Switch = ({
 	variant === 'largeSize'
 
 	return (
-		<div className={cl.root}>
-			<div className={cl.root__container}>
+		<div
+			className={classNames(
+				variant === 'smallSize' ? cl.root : cl.root_large,
+				cl.root
+			)}>
+			<div
+				className={classNames(
+					variant === 'smallSize'
+						? cl.root__container
+						: cl.root__container_large,
+					cl.root__container
+				)}>
 				<div
 					className={cl.root__container_btn}
-					style={activeValue ? { left: '0' } : { left: '150px' }}
+					style={
+						activeValue
+							? { left: '0' }
+							: variant === 'smallSize'
+								? { left: '150px' }
+								: { left: '214px' }
+					}
 				/>
 			</div>
 
