@@ -14,13 +14,25 @@ const meta: Meta<typeof Switch> = {
 			type: 'string',
 			description: 'Styles variables for component'
 		},
-		textOnLeft: {
+		option: [
+			{
+				textLeftSide: {
+					type: 'string',
+					description: 'Left value'
+				},
+				textRightSide: {
+					type: 'string',
+					description: 'Right value'
+				}
+			}
+		],
+		activeValue: {
 			type: 'string',
-			description: 'Text on the left side'
+			description: 'Active value'
 		},
-		textOnRight: {
-			type: 'string',
-			description: 'Text on the right side'
+		setActiveValue: {
+			type: 'function',
+			description: 'Change active value '
 		}
 	}
 }
@@ -30,15 +42,17 @@ type Story = StoryObj<typeof Switch>
 
 export const SmallSize: Story = {
 	args: {
-		textOnLeft: 'Courses',
-		textOnRight: 'My schedule',
-		variant: 'smallSize'
+		variant: 'smallSize',
+		option: ['Courses', 'My schedule'],
+		activeValue: 'Courses',
+		setActiveValue: () => {}
 	}
 }
 export const LargeSize: Story = {
 	args: {
-		textOnLeft: 'Days',
-		textOnRight: 'Hours',
-		variant: 'largeSize'
+		variant: 'largeSize',
+		option: ['Days', 'Lists'],
+		activeValue: 'Days',
+		setActiveValue: () => {}
 	}
 }

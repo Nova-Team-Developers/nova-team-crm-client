@@ -12,41 +12,44 @@
 		background-color: #f9f4fd;
 	}
 
-	&__container {
+	&__text {
+		z-index: 10;
+		padding: 16px;
+		font-size: 16px;
+
+		&_active {
+			color: #fff;
+			transition: 1s;
+		}
+
+		&_notactive {
+			color: #1b0a29;
+			cursor: pointer;
+			transition: 1s;
+		}
+	}
+
+	&__btn {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 150px;
 		height: 40px;
 		margin: 4px 5px;
+		background-color: #1fc6c6;
+		border-radius: 14px;
+		transition: 1s;
 
 		&_large {
 			width: 224px;
 		}
 
-		&_btn {
-			position: relative;
-			height: 100%;
-			background-color: #1fc6c6;
-			border-radius: 14px;
-			transition: 1s;
-		}
-	}
-
-	&__text {
-		z-index: 10;
-		padding: 0 40px;
-		font-size: 16px;
-		cursor: pointer;
-
-		&_left {
-			color: #fff;
-			transition: 1s;
+		&_move {
+			left: 150px;
 		}
 
-		&_right {
-			color: #1b0a29;
-			transition: 1s;
+		&_move_large {
+			left: 214px;
 		}
 	}
 }
