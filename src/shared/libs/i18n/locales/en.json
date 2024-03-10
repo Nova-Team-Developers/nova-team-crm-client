@@ -16,6 +16,10 @@
         "send_meeting_notifications": "Send meeting notifications",
         "new_messages": "New messages",
         "send_message_notifications": "Send message notifications",
-        "dont_send": "Don't send"
+        "dont_send": "Don't send",
+        "safety": "Safety",
+		    "notification": "Notification",
+		    "connected-apps": "Connected Apps",
+		    "payments": "Payments"
     }
 }

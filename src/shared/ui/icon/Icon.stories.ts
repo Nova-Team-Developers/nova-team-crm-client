@@ -1,6 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { Icon } from './Icon'
+
+
+import { Icon } from './Icon';
+
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -95,5 +98,20 @@ export const InfoPortal: Story = {
 export const Chevron: Story = {
 	args: {
 		name: 'Chevron'
+	}
+}
+export const Safety: Story = {
+	args: {
+		name: 'Safety'
+	}
+}
+export const Payments: Story = {
+	args: {
+		name: 'Payments'
+	}
+}
+export const Connected: Story = {
+	args: {
+		name: 'Connected'
 	}
 }
