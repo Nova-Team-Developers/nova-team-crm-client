@@ -1,7 +1,6 @@
 import { type CSSProperties } from 'react'
 
-// eslint-disable-next-line import/no-internal-modules
-import { classNames } from '@/shared/libs/classNames'
+import { classNames } from '@/shared'
 
 import cl from './icon.module.scss'
 import { type IconName, getIcon } from './utils'
