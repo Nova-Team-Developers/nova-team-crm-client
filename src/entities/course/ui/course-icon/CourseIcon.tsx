@@ -1,5 +1,4 @@
-import { classNames } from '@/shared'
-import { Icon } from '@/shared'
+import { Icon, classNames } from '@/shared'
 
 import cl from './CourseIcon.module.scss'
 
