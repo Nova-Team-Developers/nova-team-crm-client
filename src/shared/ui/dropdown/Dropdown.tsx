@@ -1,9 +1,11 @@
 import { useState } from 'react'
+
 import { Icon, Typography } from '@/shared'
+
 import cl from './Dropdown.module.scss'
 import { DropdownOption } from './types'
 
-const { Text } = Typography 
+const { Text } = Typography
 
 export const Dropdown = ({
 	activeValue,
@@ -16,7 +18,7 @@ export const Dropdown = ({
 	options: DropdownOption[]
 }) => {
 	const [isOpen, setIsOpen] = useState(false)
-	
+
 	const handleSelect = (value: DropdownOption) => {
 		setActiveValue(value)
 		setIsOpen(false)
