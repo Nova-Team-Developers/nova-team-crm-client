@@ -1,9 +1,8 @@
-import { Date, Icon, PercentCircle, Typography } from '@/shared'
-
-const { Title, Text } = Typography
+import { Icon, PercentCircle, Typography } from '@/shared'
 
 import cl from './ProfileCourseInfo.module.scss'
 
+const { Title, Text } = Typography
 
 export const ProfileCourseInfo = ({
 	percent,
@@ -27,10 +26,21 @@ export const ProfileCourseInfo = ({
 				/>
 			</div>
 			<div className={cl.bottom}>
-					<Date date={date} />
+				<div className={cl.bottom__date}>
+					<Icon name="CalendarGray" />
+					<Text
+						noTranslate
+						text={'Created ' + date}
+						className={cl.bottom__date__text}
+					/>
+				</div>
 				<div className={cl.percent}>
-					<PercentCircle percent={percent} className='' />
-					<Text text={percent} noTranslate={true} className={cl.number} />
+					<PercentCircle percent={percent} />
+					<Text
+						text={percent + '%'}
+						noTranslate={true}
+						className={cl.number}
+					/>
 				</div>
 			</div>
 		</div>
