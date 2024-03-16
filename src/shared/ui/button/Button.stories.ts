@@ -9,13 +9,17 @@ const meta: Meta<typeof Button> = {
 	argTypes: {
 		fullWidth: {
 			type: 'boolean',
-			description: 'Растянуть кнопку на всю ширину',
+			description: 'Make button full width',
 			defaultValue: false
 		},
 		thin: {
 			type: 'boolean',
-			description: 'Сделать кнопку тонкой',
+			description: 'Make button thin',
 			defaultValue: false
+		},
+		link: {
+			type: 'string',
+			description: 'Is button link'
 		}
 	},
 	parameters: {
@@ -49,5 +53,11 @@ export const IconSecondary: Story = {
 	args: {
 		iconName: 'Add',
 		variant: 'icon-secondary'
+	}
+}
+export const Link: Story = {
+	args: {
+		iconName: 'More',
+		link: '#'
 	}
 }

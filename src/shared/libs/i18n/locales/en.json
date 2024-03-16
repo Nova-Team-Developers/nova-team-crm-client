@@ -18,8 +18,12 @@
         "send_message_notifications": "Send message notifications",
         "dont_send": "Don't send",
         "safety": "Safety",
-		    "notification": "Notification",
-		    "connected-apps": "Connected Apps",
-		    "payments": "Payments"
+        "notification": "Notification",
+        "connected-apps": "Connected Apps",
+        "payments": "Payments",
+        "gender": "Gender",
+        "birthday": "Birthday",
+        "full_age": "Full age",
+        "position": "Position"
     }
 }
