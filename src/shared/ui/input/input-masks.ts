@@ -1,4 +1,4 @@
 export const inputMasks = {
 	email: '[a-zA-Z0-9._]+@[a-z]+.[a-z]{2,}$',
-	tel: ''
+	tel: '[0-9]+$'
 }
