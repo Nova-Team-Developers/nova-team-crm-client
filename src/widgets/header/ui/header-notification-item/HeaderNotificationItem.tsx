@@ -1,5 +1,6 @@
 import { Typography } from '@/shared'
 
+import type { THeaderNotificationItem } from '../../types'
 import cl from './HeaderNotificationItem.module.scss'
 import userImage from './user-image.png'
 
@@ -8,13 +9,9 @@ export const HeaderNotificationItem = ({
 	name,
 	description,
 	date
-}: {
-	name: string
-	description: string
-	date: string
-}) => {
+}: THeaderNotificationItem) => {
 	return (
-		<div className={cl.root}>
+		<li className={cl.root}>
 			<div>
 				<img
 					className={cl.root__user__profile_image}
@@ -22,7 +19,7 @@ export const HeaderNotificationItem = ({
 					alt="profile_image"
 				/>
 			</div>
-			<div>
+			<div className={cl.root__notification__body}>
 				<div className={cl.root__notification_header}>
 					<Title
 						variant="h3"
@@ -34,13 +31,11 @@ export const HeaderNotificationItem = ({
 						text={description}
 					/>
 				</div>
-				<div>
-					<Text
-						className={cl.root__notification_date}
-						text={date}
-					/>
-				</div>
+				<Text
+					className={cl.root__notification_date}
+					text={date}
+				/>
 			</div>
-		</div>
+		</li>
 	)
 }
