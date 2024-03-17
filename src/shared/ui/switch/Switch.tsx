@@ -24,9 +24,7 @@ export const Switch = ({
 			<div
 				className={classNames(
 					cl.root__btn,
-					activeValue === options[0]
-						? ''
-						: cl.root__btn_move
+					activeValue === options[0] ? '' : cl.root__btn_move
 				)}
 			/>
 			{options.map(text => (
