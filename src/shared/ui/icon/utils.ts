@@ -21,7 +21,7 @@ import Search from '@/shared/assets/icons/search.svg?react'
 import Settings from '@/shared/assets/icons/settings.svg?react'
 import Teachers from '@/shared/assets/icons/teachers.svg?react'
 
-const icons = {
+export const icons = {
 	Settings,
 	Notification,
 	Add,
