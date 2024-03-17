@@ -1,7 +1,6 @@
 import { type CSSProperties } from 'react'
 
-// eslint-disable-next-line import/no-internal-modules
-import { classNames } from '@/shared/libs/classNames'
+import { classNames } from '@/shared'
 
 import cl from './icon.module.scss'
 import { type IconName, getIcon } from './utils'
@@ -10,14 +9,19 @@ interface IconProps {
 	name: IconName
 	className?: string
 	style?: CSSProperties
+	color?: string
 }
-export const Icon = ({ name, className, style }: IconProps) => {
+export const Icon = ({ name, className, color }: IconProps) => {
 	const Svg = getIcon(name)
 
 	return (
 		<Svg
-			style={style}
-			className={classNames(cl.icon, className ? className : '')}
+			color={color}
+			className={classNames(
+				cl.root,
+				color ? cl.root_color : '',
+				className ?? ''
+			)}
 		/>
 	)
 }
