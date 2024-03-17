@@ -5,20 +5,28 @@ import cl from './Switch.module.scss'
 const { Text } = Typography
 
 export const Switch = ({
+	variant,
 	options,
 	activeValue,
 	setActiveValue
 }: {
+	variant: 'noBackground' | 'withBackground'
 	options: [string, string]
 	activeValue: string
 	setActiveValue: (v: string) => void // eslint-disable-line no-unused-vars
 }) => {
 	return (
-		<div className={cl.root}>
+		<div
+			className={classNames(
+				cl.root,
+				variant === 'withBackground' ? cl.root_background : ''
+			)}>
 			<div
 				className={classNames(
 					cl.root__btn,
-					activeValue === options[0] ? '' : cl.root__btn_move
+					activeValue === options[0]
+						? ''
+						: cl.root__btn_move
 				)}
 			/>
 			{options.map(text => (

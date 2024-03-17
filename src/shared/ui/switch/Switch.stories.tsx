@@ -1,6 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { Switch } from './Switch'
+
+
+import { Switch } from './Switch';
+
 
 const meta: Meta<typeof Switch> = {
 	component: Switch,
@@ -14,7 +17,7 @@ const meta: Meta<typeof Switch> = {
 			type: 'string',
 			description: 'Styles variables for component'
 		},
-		option: [
+		options: [
 			{
 				textLeftSide: {
 					type: 'string',
@@ -40,18 +43,18 @@ export default meta
 
 type Story = StoryObj<typeof Switch>
 
-export const SmallSize: Story = {
+export const NoBackground: Story = {
 	args: {
-		variant: 'smallSize',
-		option: ['Courses', 'My schedule'],
+		variant: 'noBackground',
+		options: ['Courses', 'My schedule'],
 		activeValue: 'Courses',
 		setActiveValue: () => {}
 	}
 }
-export const LargeSize: Story = {
+export const WithBackground: Story = {
 	args: {
-		variant: 'largeSize',
-		option: ['Days', 'Lists'],
+		variant: 'withBackground',
+		options: ['Days', 'Lists'],
 		activeValue: 'Days',
 		setActiveValue: () => {}
 	}
