@@ -1,5 +1,4 @@
 import { Icon, classNames } from '@/shared'
-
 import cl from './CourseIcon.module.scss'
 
 export const CourseIcon = ({

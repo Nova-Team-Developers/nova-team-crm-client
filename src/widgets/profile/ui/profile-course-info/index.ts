@@ -1,0 +1,1 @@
+export { ProfileCourseInfo } from './ProfileCourseInfo'
