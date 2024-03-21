@@ -25,5 +25,8 @@
         "birthday": "Birthday",
         "full_age": "Full age",
         "position": "Position"
+        "notifications": "Notifications",
+        "connected-apps": "Connected Apps",
+        "payments": "Payments"
     }
 }

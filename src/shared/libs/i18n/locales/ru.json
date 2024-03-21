@@ -26,5 +26,8 @@
         "birthday": "День рождения",
         "full_age": "Возраст",
         "position": "Должность"
+        "notifications": "Уведомления",
+        "connected-apps": "Связанные приложения",
+        "payments": " Платежи"
     }
 }

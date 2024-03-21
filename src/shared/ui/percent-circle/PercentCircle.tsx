@@ -12,7 +12,7 @@ export const PercentCircle = ({
 }: {
 	percent: string
 	children?: ReactNode
-	className: string
+	className?: string
 }) => {
 	const checkedPercent = +percent > 100 ? '100' : percent
 

@@ -4,7 +4,10 @@
 import Add from '@/shared/assets/icons/add.svg?react'
 import Arrow from '@/shared/assets/icons/arrow.svg?react'
 import Calendar from '@/shared/assets/icons/calendar.svg?react'
+import CalendarGray from '@/shared/assets/icons/calendarGray.svg?react'
 import Chevron from '@/shared/assets/icons/chevron.svg?react'
+import Computer from '@/shared/assets/icons/computer.svg?react'
+import Close from '@/shared/assets/icons/close.svg?react'
 import Connected from '@/shared/assets/icons/connected-apps.svg?react'
 import Course from '@/shared/assets/icons/course-icon.svg?react'
 import Courses from '@/shared/assets/icons/courses.svg?react'
@@ -22,7 +25,7 @@ import Search from '@/shared/assets/icons/search.svg?react'
 import Settings from '@/shared/assets/icons/settings.svg?react'
 import Teachers from '@/shared/assets/icons/teachers.svg?react'
 
-const icons = {
+export const icons = {
 	Settings,
 	Notification,
 	Add,
@@ -32,9 +35,11 @@ const icons = {
 	Done,
 	Safety,
 	Course,
+	Computer,
+	Calendar,
+	CalendarGray,
 	Dashboard,
 	Courses,
-	Calendar,
 	Teachers,
 	Messenger,
 	InfoPortal,
@@ -42,7 +47,8 @@ const icons = {
 	Arrow,
 	Connected,
 	Payments,
-	More
+	More,
+	Close
 }
 
 export type IconName = keyof typeof icons
