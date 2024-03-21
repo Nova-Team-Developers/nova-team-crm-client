@@ -17,6 +17,7 @@ import Edit from '@/shared/assets/icons/edit.svg?react'
 import InfoPortal from '@/shared/assets/icons/infoPortal.svg?react'
 import Logout from '@/shared/assets/icons/logout.svg?react'
 import Messenger from '@/shared/assets/icons/messenger.svg?react'
+import More from '@/shared/assets/icons/more.svg?react'
 import Notification from '@/shared/assets/icons/notifications.svg?react'
 import Payments from '@/shared/assets/icons/payments.svg?react'
 import Safety from '@/shared/assets/icons/safety.svg?react'
@@ -46,6 +47,7 @@ export const icons = {
 	Arrow,
 	Connected,
 	Payments,
+	More,
 	Close
 }
 

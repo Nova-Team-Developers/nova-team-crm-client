@@ -19,6 +19,12 @@
         "dont_send": "Don't send",
         "safety": "Safety",
         "notification": "Notification",
+        "connected-apps": "Connected Apps",
+        "payments": "Payments",
+        "gender": "Gender",
+        "birthday": "Birthday",
+        "full_age": "Full age",
+        "position": "Position"
         "notifications": "Notifications",
         "connected-apps": "Connected Apps",
         "payments": "Payments"

@@ -13,7 +13,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
 	useEffect(() => {
 		dispatch(changeThemeAction(getThemeFromCookie()))
-	}, [])
+	}, []) // eslint-disable-line
 
 	useEffect(() => {
 		document.body.setAttribute('data-theme', theme)
