@@ -1,14 +1,32 @@
 {
-	"translation": {
-		"course-data": "Course Data",
-		"all-lessons": "All lessons",
-		"uploaded-lessons": "Uploaded lessons",
-		"teacher": "Teacher",
-		"class": "Class",
-		"homework": "Homework",
-		"online-meeting": "Online meeting",
-		"search-course": "Search course",
-		"teaches-courses": "Teaches courses",
-		"lessons-in-total": "Lessons in total"
-	}
+    "translation": {
+        "course-data": "Course Data",
+        "all-lessons": "All lessons",
+        "uploaded-lessons": "Uploaded lessons",
+        "teacher": "Teacher",
+        "class": "Class",
+        "homework": "Homework",
+        "online-meeting": "Online meeting",
+        "search-course": "Search course",
+        "teaches-courses": "Teaches courses",
+        "lessons-in-total": "Lessons in total",
+        "issue_activity": "Issue activity",
+        "send_email_issue": "Send email issue",
+        "meeting_tracking": "Meeting tracking",
+        "send_meeting_notifications": "Send meeting notifications",
+        "new_messages": "New messages",
+        "send_message_notifications": "Send message notifications",
+        "dont_send": "Don't send",
+        "safety": "Safety",
+        "notification": "Notification",
+        "connected-apps": "Connected Apps",
+        "payments": "Payments",
+        "gender": "Gender",
+        "birthday": "Birthday",
+        "full_age": "Full age",
+        "position": "Position"
+        "notifications": "Notifications",
+        "connected-apps": "Connected Apps",
+        "payments": "Payments"
+    }
 }
