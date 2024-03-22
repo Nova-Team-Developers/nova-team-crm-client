@@ -7,6 +7,27 @@
         "class": "Класс",
         "homework": "Домашнее задание",
         "online-meeting": "Онлайн встреча",
-        "search-course": "Найти курс"
+        "search-course": "Найти курс",
+        "teaches-courses": "Преподаваемые курсы",
+        "lessons-in-total": "Всего уроков",
+        "issue_activity": "Активность по задачам",
+        "send_email_issue": "Отправка сообщений об активности",
+        "meeting_tracking": "Уведомление о созвонах",
+        "send_meeting_notifications": "Отправлять уведомления о созвонах",
+        "new_messages": "Новые сообщения",
+        "send_message_notifications": "Уведомление об отправке сообщений",
+        "dont_send": "Не отправлять",
+        "lessons-in-total": "Всего уроков",
+        "safety": "Безопасность",
+        "notification": "Уведомление",
+        "connected-apps": "Связанные приложения",
+        "payments": " Платежи",
+        "gender": "Пол",
+        "birthday": "День рождения",
+        "full_age": "Возраст",
+        "position": "Должность"
+        "notifications": "Уведомления",
+        "connected-apps": "Связанные приложения",
+        "payments": " Платежи"
     }
 }
