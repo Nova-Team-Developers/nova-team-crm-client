@@ -24,7 +24,7 @@
         "gender": "Gender",
         "birthday": "Birthday",
         "full_age": "Full age",
-        "position": "Position"
+        "position": "Position",
         "notifications": "Notifications",
         "connected-apps": "Connected Apps",
         "payments": "Payments"
