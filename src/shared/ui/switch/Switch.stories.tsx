@@ -1,5 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { useState } from 'react'
+
+// eslint-disable-next-line
+import '@/app/styles/index.scss'
+
 import { Switch } from './Switch'
 
 const meta: Meta<typeof Switch> = {
@@ -46,13 +51,43 @@ export const NoBackground: Story = {
 		options: ['Courses', 'My schedule'],
 		activeValue: 'Courses',
 		setActiveValue: () => {}
-	}
+	},
+	decorators: [
+		Story => {
+			const options: [string, string] = ['Courses', 'My schedule']
+
+			const [activeValue, setActiveValue] = useState(options[0])
+
+			return (
+				<Story
+					args={{
+						activeValue,
+						setActiveValue,
+						options,
+						variant: 'noBackground'
+					}}
+				/>
+			)
+		}
+	]
 }
 export const WithBackground: Story = {
-	args: {
-		variant: 'withBackground',
-		options: ['Days', 'Lists'],
-		activeValue: 'Days',
-		setActiveValue: () => {}
-	}
+	decorators: [
+		Story => {
+			const options: [string, string] = ['Days', 'Lists']
+
+			const [activeValue, setActiveValue] = useState(options[0])
+
+			return (
+				<Story
+					args={{
+						activeValue,
+						setActiveValue,
+						options,
+						variant: 'withBackground'
+					}}
+				/>
+			)
+		}
+	]
 }
