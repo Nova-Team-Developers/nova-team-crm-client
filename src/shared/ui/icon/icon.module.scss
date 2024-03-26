@@ -1,3 +1,7 @@
-.icon {
+.root {
 	display: inline-block;
+
+	&_color [fill] {
+		fill: currentcolor;
+	}
 }

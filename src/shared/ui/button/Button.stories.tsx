@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { BrowserRouter } from 'react-router-dom'
+
 import { Button } from './Button'
 
 const meta: Meta<typeof Button> = {
@@ -9,13 +11,17 @@ const meta: Meta<typeof Button> = {
 	argTypes: {
 		fullWidth: {
 			type: 'boolean',
-			description: 'Растянуть кнопку на всю ширину',
+			description: 'Make button full width',
 			defaultValue: false
 		},
 		thin: {
 			type: 'boolean',
-			description: 'Сделать кнопку тонкой',
+			description: 'Make button thin',
 			defaultValue: false
+		},
+		link: {
+			type: 'string',
+			description: 'Is button link'
 		}
 	},
 	parameters: {
@@ -50,4 +56,14 @@ export const IconSecondary: Story = {
 		iconName: 'Add',
 		variant: 'icon-secondary'
 	}
+}
+export const Link: Story = {
+	render: () => (
+		<BrowserRouter>
+			<Button
+				iconName="More"
+				link="#"
+			/>
+		</BrowserRouter>
+	)
 }

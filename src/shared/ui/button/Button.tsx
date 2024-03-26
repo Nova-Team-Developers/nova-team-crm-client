@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { Icon, IconName, classNames } from '@/shared'
 
 import { Typography } from '../typography'
@@ -10,7 +12,8 @@ export const Button = ({
 	fullWidth = false,
 	thin = false,
 	variant = 'primary',
-	onClick
+	onClick,
+	link
 }: {
 	className?: string
 	text?: string
@@ -19,6 +22,7 @@ export const Button = ({
 	thin?: boolean
 	variant?: 'primary' | 'secondary' | 'icon-primary' | 'icon-secondary'
 	onClick?: () => void
+	link?: string
 }) => {
 	const { Text } = Typography
 	const classNameVariant = {
@@ -37,6 +41,22 @@ export const Button = ({
 		thin ? cl.root_thin : '',
 		classNameVariant[variant]
 	)
+
+	if (link) {
+		return (
+			<Link
+				to={link}
+				className={classes}>
+				{text && (
+					<Text
+						variant="button"
+						text={text}
+					/>
+				)}
+				{iconName && <Icon name={iconName} />}
+			</Link>
+		)
+	}
 
 	return (
 		<button
