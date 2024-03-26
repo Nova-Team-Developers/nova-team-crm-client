@@ -25,7 +25,7 @@
         "gender": "Пол",
         "birthday": "День рождения",
         "full_age": "Возраст",
-        "position": "Должность"
+        "position": "Должность",
         "notifications": "Уведомления",
         "connected-apps": "Связанные приложения",
         "payments": " Платежи"
