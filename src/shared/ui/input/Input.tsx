@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 import { classNames } from '@/shared'
 
 import cl from './index.module.scss'
-import { inputMasks } from './input-masks'
 
 export const Input = ({
 	label,
@@ -52,11 +51,6 @@ export const Input = ({
 				/>
 			) : (
 				<input
-					pattern={
-						type === 'email' || type === 'tel'
-							? inputMasks[type]
-							: undefined
-					}
 					className={inputClasses}
 					id={labelId}
 					placeholder={noTranslate ? placeholder : t(placeholder)}
